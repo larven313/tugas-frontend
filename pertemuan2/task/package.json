@@ -1,0 +1,11 @@
+{
+  "name": "task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "task.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node task.js",
+    "dev": "nodemon task.js"
+  }
+}
