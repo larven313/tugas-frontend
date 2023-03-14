@@ -18,14 +18,19 @@ import users from "../data/users.js";
  * - Gunakan method map untuk format user.
  * - Gunakan promise untuk handle asynchronous.
  */
- const formatUser = (format) => {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        const formattedUsers = users.map((user) => `${format} ${user.name}`);
-        resolve(formattedUsers);
-      }, 3000);
-    });
-  };
+ const formatUser = (title) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const formattedUsers = users.map((user) => ({
+        name: `${title} ${user.name}`,
+        age: user.age,
+        major: user.major
+      }));
+      resolve(formattedUsers);
+    }, 3000);
+  });
+};
+
   
   
 
@@ -37,10 +42,10 @@ import users from "../data/users.js";
   * - Gunakan method find untuk mencari 1 user.
   * - Gunakan promise untuk handle asynchronous.
   */
- const findByName = (username) => {
+ const findByName = (name) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            const findedUser = users.find((user) =>  user.name === username);
+            const findedUser = users.find((user) =>  user.name === name);
             resolve(findedUser);
         }, 2000);
     })
