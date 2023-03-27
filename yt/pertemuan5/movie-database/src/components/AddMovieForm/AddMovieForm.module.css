@@ -79,4 +79,14 @@
     .form__input {
         width: 250px;
     }
+
+    .form__left {
+        flex-basis: auto;
+    }
+
+    .form__right {
+        flex-basis: auto;
+    }
+
+
 }
