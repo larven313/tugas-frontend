@@ -1,0 +1,21 @@
+.container {
+    background-color: #fff;
+    overflow: auto;
+    text-align: center;
+    
+}
+
+.table, th, td {
+    margin: 0 auto;
+    border: 1px solid #64748B;
+    text-align: center;
+}
+
+.table thead tr th {
+    color: #06D6A0;
+}
+
+.table tbody tr td {
+    color: #64748B;
+}
+

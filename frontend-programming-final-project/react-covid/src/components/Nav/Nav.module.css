@@ -1,0 +1,19 @@
+/* Small Screen */
+.nav {
+    list-style: none;
+}
+
+.nav__item {
+    margin-bottom: 1rem;
+}
+
+@media(min-width:768px) {
+    .nav {
+        display: flex;
+        justify-content: right;
+        margin-right: 2rem;
+    }
+    .nav__item {
+        margin: 0.5rem;
+    }
+}

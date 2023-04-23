@@ -1,0 +1,21 @@
+.footer {
+    background-color: #06D6A0;
+    color: white;
+    padding: 1rem;
+}
+
+.footer__title{
+    margin: 0 1rem;
+}
+
+.footer__desc {
+    margin: 0 1rem;
+    color: #fff;
+}
+
+@media(min-width:768px) {
+    .footer{
+        display: flex;
+        justify-content: space-between;
+    }
+}
