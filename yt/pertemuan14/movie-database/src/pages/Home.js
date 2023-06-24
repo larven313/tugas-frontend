@@ -6,9 +6,11 @@ import Navbar from "../components/Navbar/Navbar";
 import { useState } from "react";
 import data from "../components/utils/constants/data";
 import Counter from "../components/Counter";
+import { useDispatch } from "react-redux";
 
 function Main() {
   const [movies, setMovies] = useState(data);
+  const dispatch = useDispatch();
   return (
     <div>
       <Hero />
